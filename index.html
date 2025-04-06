@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="Imagenes/Inventario.jpeg">
+		<link rel="stylesheet" type="text/css" href="CSS/Inventario.css">
+		<title>Gestión de Inventario de Productos</title>
+	</head>
+	<body>
+		<h1 Titulo>Gestión de Inventario de Productos</h1>
+		 <div class="seccion">
+		    <h2>Añadir Producto</h2>
+		    <input type="text" id="nombreProducto" placeholder="Nombre del producto">
+		    <input type="number" id="cantidadProducto" placeholder="Cantidad">
+		    <input type="number" id="precioProducto" placeholder="Precio">
+		    <button onclick="agregarProducto()">Añadir</button>
+		  </div>
+
+		  <!-- Ver Inventario -->
+		  <div class="seccion">
+		    <h2>Inventario</h2>
+		    <button onclick="mostrarInventario()">Ver Inventario</button>
+		    <div id="inventario"></div>
+		  </div>
+
+		  <!-- Vender Producto -->
+		  <div class="seccion">
+		    <h2>Vender Producto</h2>
+		    <input type="text" id="nombreVenta" placeholder="Nombre del producto">
+		    <input type="number" id="cantidadVenta" placeholder="Cantidad a vender">
+		    <button onclick="venderProducto()">Vender</button>
+		  </div>
+
+		  <!-- Buscar Producto -->
+		  <div class="seccion">
+		    <h2>Buscar Producto</h2>
+		    <input type="text" id="buscarNombre" placeholder="Nombre del producto">
+		    <button onclick="buscarProducto()">Buscar</button>
+		    <div id="resultadoBusqueda"></div>
+		  </div>
+		<script src="JavaScript/Inventario.js"></script>
+	</body>
+</html>
